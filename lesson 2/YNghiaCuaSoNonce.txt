@@ -1,0 +1,9 @@
+-Nonce chỉ được dùng chỉ 1 lần, tất cả những chuyển giao password với cùng 1 nonce sẽ bị server từ chối. Vì vậy những kẻ tấn công mà chặn message sẽ không thể access bằng việc gửi lại message lên server
+-Là 1 số mà chỉ được sử dụng 1 lần, số hoàn toàn ngẫu nhiên.
+-Được định nghĩa bởi người dùng và có thể sử dụng để tăng bảo mật.
+-Gồm 32 bits 
+-Client
+-Người dùng sử dụng code nhận được để thêm vào password trước khi mã hóa. Mã hóa cái string nhận được và gửi message đến server.
+-Server giải mã message từ string nhận được từ số nonce đã biết và xác định password.
+-Trong quá trình đào coin, mục đích là tìm ra 1 hash  theo số đích dựa trên việc tính toán phức tạp. Nếu như kết quả sau khi hash nhỏ hơn đich hash thì sẽ có được block và đạt được đồng thuận
+-Dùng để tạo ra main trong giao dịch, ngăn chặn việc sao chép, nhân bản.
