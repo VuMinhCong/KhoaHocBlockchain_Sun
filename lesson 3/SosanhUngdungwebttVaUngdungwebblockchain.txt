@@ -1,0 +1,24 @@
+So sánh Kiến trúc của một ứng dụng web thông thường và một ứng dụng web blockchain.
+
+1)Ưu điểm của một ứng dụng web blockchain so với một ứng dụng web thông thường:
+-Thông tin đăng nhập của người dùng: Người dùng không cần đăng ký; họ đã có tài khoản, là khóa công khai / riêng tư để liên kết với phiên người dùng và siêu dữ liệu của họ.
+-Cơ sở dữ liệu : Lưu trữ nhiều dữ liệu trong chuỗi khối rất tốn kém, vì vậy có thể blockchain sẽ không phải là cơ sở dữ liệu duy nhất cho ứng dụng, nhưng các phần dữ liệu quan trọng có thể được lưu trữ mãi mãi trên blockchain.
+-Ghi nhật ký : Các contracts có thể tạo nhật ký của riêng chúng, một ứng dụng web blockchain có thể truy vấn để biết những gì đã xảy ra trong quá khứ, thay vì cần tạo nhật ký riêng biệt.
+-Tin cậy : Người dùng của bạn có thể tin tưởng mã của bạn, vì không chỉ mã giao diện người dùng (Javascript) hiển thị (thông qua các công cụ kiểm tra của trình duyệt) mà còn có thể kiểm tra lô-gic phía sau (mã hợp đồng), 
+vì vậy nó có thể được xác minh độc lập rằng mã của bạn không có cửa hậu trong đó để lấy cắp tất cả tiền của họ.
+-Xử lý thanh toán : Không cần tích hợp với Stripe hoặc PayPal để chấp nhận tiền từ người dùng. Tất cả người dùng có thể gửi/nhận các loại coin(bitcoin, ether,...) như một phương tiện thanh toán chung.
+
+2)Nhược điểm của một ứng dụng web blockchain so với một ứng dụng web thông thường:
+-Các ứng dụng web thông thường có thể chạy hàng nghìn giao dịch mỗi giây.
+-Ứng dụng web blockchain chậm do phụ thuộc vào một các nút chứ không phải một máy chủ máy tính duy nhất. Tuy nhiên, nó có thể chạy độc lập bằng cách sử dụng các nút đã tạo.
+
+3)Những điểm riêng biệt về cấu trúc của một ứng dụng web blockchain so với một ứng dụng web thông thường:
+-Ứng dụng web blockchain:
++ phát triển theo mô hình mô hình phi tập trung tồn tại trên blockchain, có nghĩa là mã nguồn và tất cả dữ liệu của nó được trải rộng trên một loạt các nút hoặc máy tính, hoạt động để xác minh mọi giao dịch được thực hiện trên
+ứng dụng.
++được tạo thành từ dữ liệu mà người dùng tạo ra. Mỗi khi người dùng thực hiện giao dịch trên DApp, các nút sẽ hoạt động để xác minh việc trao đổi. Dữ liệu này được công khai cho mọi người xem, điều này cho phép những người khác
+xác minh giao dịch sau này.
+
+-Ứng dụng web thông thường:
++Đều được phát triển theo mô hình mô hình tập trung, có nghĩa là tất cả các client đều kết nối đến cùng 1 backend instance (1 backend instance thì quản lý nhiều session đại diện cho mỗi client).
++Được lưu trữ dữ liệu của người dùng trên một máy chủ riêng biệt thường được đặt tại trụ sở chính của công ty.
